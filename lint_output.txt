@@ -1,0 +1,17 @@
+
+> ibnsina-frontend@0.1.0 lint
+> next lint
+
+
+./src/app/about/page.tsx
+16:5  Error: 'Star' is defined but never used.  @typescript-eslint/no-unused-vars
+18:5  Error: 'HeartPulse' is defined but never used.  @typescript-eslint/no-unused-vars
+113:23  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+241:175  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+259:37  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+259:169  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+417:114  Error: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+537:7  Error: 'Button' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+537:61  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
