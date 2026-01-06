@@ -60,7 +60,7 @@ export default function ContactPage() {
                     </div>
                 ) : (
                     <div className="text-center py-20 bg-gray-50 rounded-2xl border border-dashed border-gray-200">
-                        <p className="text-slate-400 font-medium">No branches found matching "{searchQuery}"</p>
+                        <p className="text-slate-400 font-medium">No branches found matching &ldquo;{searchQuery}&rdquo;</p>
                         <button
                             onClick={() => setSearchQuery("")}
                             className="mt-4 text-primary font-bold hover:underline"

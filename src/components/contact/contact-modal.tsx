@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { BranchLocation } from "@/data/branches-location-data";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, MapPin, Phone, Mail, Clock, CheckCircle, Smartphone, ExternalLink } from "lucide-react";
+import { X, ExternalLink } from "lucide-react";
 
 interface ContactModalProps {
     branch: BranchLocation | null;

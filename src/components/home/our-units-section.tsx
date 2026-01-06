@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import { ComposableMap, Geographies, Geography, Marker, ZoomableGroup } from "react-simple-maps";
 import { BRANCH_LOCATIONS, BranchLocation } from "@/data/branches-location-data";
-import { MapPin, Building2, Phone, Navigation } from "lucide-react";
+import { MapPin, Phone, Navigation } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 // TopoJSON for Bangladesh
@@ -20,7 +20,7 @@ export function OurUnitsSection() {
         if (defaultBranch && !selectedBranch) {
             setSelectedBranch(defaultBranch);
         }
-    }, []);
+    }, [selectedBranch]);
 
     const handleSelectBranch = (branch: BranchLocation) => {
         setSelectedBranch(branch);

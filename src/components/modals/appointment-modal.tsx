@@ -41,15 +41,12 @@ const Select = ({ options, placeholder, value, onChange }: { options: string[], 
 const CustomCalendar = ({ selectedDate, onSelect }: { selectedDate: Date | null, onSelect: (d: Date) => void }) => {
     const today = new Date();
     // Generate next 14 days
-    const dates = useMemo(() => {
-        const result = [];
-        for (let i = 0; i < 14; i++) {
-            const d = new Date(today);
-            d.setDate(today.getDate() + i);
-            result.push(d);
-        }
-        return result;
-    }, []);
+    const dates = [];
+    for (let i = 0; i < 14; i++) {
+        const d = new Date(today);
+        d.setDate(today.getDate() + i);
+        dates.push(d);
+    }
 
     // Helper to format date
     const formatDate = (date: Date) => {
@@ -222,7 +219,7 @@ export function AppointmentModal() {
                                                     <div className="flex-1 min-w-0">
                                                         <h3 className="font-bold text-gray-900 truncate group-hover:text-primary transition-colors">{doctor.name}</h3>
                                                         <p className="text-xs text-primary font-medium mb-1">{doctor.specialty}</p>
-                                                        <p className="text-xs text-gray-500 truncate mb-2">{doctor.degree}</p>
+                                                        <p className="text-xs text-gray-500 truncate mb-2">{doctor.qualifications}</p>
                                                         <div className="flex items-center gap-1.5 text-[11px] text-gray-400">
                                                             <MapPin className="w-3 h-3" />
                                                             <span className="truncate">{doctor.branchName.split(',')[0]}</span>

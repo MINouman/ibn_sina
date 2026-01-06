@@ -6,7 +6,7 @@ import { Notices } from "@/components/home/notices";
 import { BlogSection } from "@/components/home/blog-section";
 import { Gallery } from "@/components/home/gallery";
 import { OurUnitsSection } from "@/components/home/our-units-section";
-import Link from "next/link";
+
 
 export default function Home() {
   return (
